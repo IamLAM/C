@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -19,6 +20,16 @@ int main()
     Cuarto hace la suma
     Quinto hace la resta
     */
+
+    //Uso de libreria math y constantes
+    double raiz=sqrt(124);
+    double potencia=pow(2,2);
+    double seno=sin(124);
+    double coseno=cos(124);
+    cout<<raiz<<endl;
+    cout<<potencia<<endl;
+    cout<<seno<<endl;
+    cout<<coseno<<endl;
 
     return 0;
 }
