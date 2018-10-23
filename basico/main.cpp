@@ -23,6 +23,7 @@ int main()
 
    int edad=10;
    char sexo='h';
-   cout <<edad<<sexo<<endl;
+   int tiempo=12e3; // valor exponencial
+   cout <<edad<<sexo<<tiempo<<endl;
     return 0;
 }
