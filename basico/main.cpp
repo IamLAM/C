@@ -24,6 +24,15 @@ int main()
    int edad=10;
    char sexo='h';
    int tiempo=12e3; // valor exponencial
-   cout <<edad<<sexo<<tiempo<<endl;
+   int tiempo2=12e-3; // valor exponencial
+   string pais;
+
+
+   cout <<edad<<sexo<<endl;
+
+   cout <<tiempo<<tiempo2<<endl;
+   cout<<"Cual es tu pais de origen"<<endl;
+   cin>>pais;
+   cout <<pais<<endl;
     return 0;
 }
