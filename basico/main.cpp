@@ -17,5 +17,12 @@ int main()
     cout << "Buenos dias!\t"  <<"Hola"<< endl;
     cout << "Buenos dias!" << endl;
     cout << "Hasta luego!\r"  <<"Nos vemos"<< endl;
+
+
+   cout <<"Desplegando valores"<<endl;
+
+   int edad=10;
+   char sexo='h';
+   cout <<edad<<sexo<<endl;
     return 0;
 }
