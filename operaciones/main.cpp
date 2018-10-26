@@ -31,5 +31,17 @@ int main()
     cout<<seno<<endl;
     cout<<coseno<<endl;
 
+    /*Obtendremos valores de figuras geometricas*/
+
+    float resultado,base,altura;
+
+    cout<<"Area de un triangulo"<<endl;
+    cout<<"Cual es la base"<<endl;
+    cin>>base;
+    cout<<"Cual es la altura"<<endl;
+    cin>>altura;
+    resultado=(base*altura)/2;
+    cout<<resultado<<endl;
+
     return 0;
 }
