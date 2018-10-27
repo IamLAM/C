@@ -19,7 +19,13 @@ int main()
 
     *p=1000;
     cout <<"El valor de a es: "<<a<<endl;
+    cout <<"==================="<<endl;
+    cout <<"Haremos una referencia a la misma memoria"<<endl;
+    int &r=a;
+    cout <<"Contenido de la variable"<<a<<endl;
+    cout <<"Dirección de memoria de la variable"<<&a<<endl;
 
-
+    cout <<"Contenido de la referencia"<<r<<endl;
+    cout <<"Dirección de memoria de la referencia"<<&r<<endl;
     return 0;
 }
