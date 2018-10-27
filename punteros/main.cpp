@@ -14,5 +14,12 @@ int main()
     cout <<"Contenido de memoria del puntero"<<p<<endl;
     cout <<"Dirección de memoria del puntero"<<&p<<endl;
 
+    cout <<"Modificaremos el valor de a desde puntero"<<endl;
+    cout <<"El valor de a desde p: "<<*p<<endl;
+
+    *p=1000;
+    cout <<"El valor de a es: "<<a<<endl;
+
+
     return 0;
 }
