@@ -46,7 +46,7 @@ int main()
 
             }
     */
-    cls();
+/*
     int numero,*pn,c=0;
     char salir='n';
     while(salir!='y')
@@ -72,7 +72,23 @@ int main()
         cout<<"deseas salir?(y/n):";
         cin>>salir;
     }
-    getch();
+    getch();*/
+
+    cout<<"Arreglos y punteros"<<endl;
+    int n[]={10,20,30,40,50};
+    int *np;
+    np=n; // se copia la direccion de memoria del espacio 1 del arreglo
+
+    for(int i=0;i<5;i++)
+    {
+
+
+        cout<<"Elemento:"<<i<<":"<<*np<<endl;
+
+    }
+
+  getch();
+
 
     return 0;
 }
