@@ -10,7 +10,8 @@ int main()
 {
     obtenerNota();
     desplegarNota();
-
+    //eliminamos memoria
+    delete[]pc;
 
 
     return 0;
