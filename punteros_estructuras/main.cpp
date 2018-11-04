@@ -11,20 +11,20 @@ struct alumno
 
 
 void registrarAlumno();
-void mostrarAlumno(alumno *);
+void mostrarAlumno();
 
 
 int main()
 {
     registrarAlumno();
-    mostrarAlumno(puntero_alumno);
+    mostrarAlumno();
 
     return 0;
 }
 
-void mostrarAlumno(alumno *al){
+void mostrarAlumno(){
 
-cout<<"Mi nombre es:"<<al->nombre<<" y voy en el semestre: "<<al->semestre<<endl;
+cout<<"Mi nombre es:"<<puntero_alumno->nombre<<" y voy en el semestre: "<<puntero_alumno->semestre<<endl;
 
 }
 
