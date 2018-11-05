@@ -9,8 +9,9 @@ struct Nodo
 
 };
 
-void insertarPila(Nodo *&,int);
 
+void insertarPila(Nodo *&,int);
+void mostrarPila(Nodo *&);
 
 int main()
 {
@@ -23,12 +24,15 @@ int main()
     cout<<"Proporciona la cantidad de numeros a introducir en la pila"<<endl;
     cin>>cantidad;
 
-    while(i<cantidad){
+    while(i<cantidad)
+    {
         cout<<"Dame el valor["<<i<<"]:";
         cin>>v;
         insertarPila(pila,v);
         i++;
     }
+
+    mostrarPila(pila);
 
 
     return 0;
@@ -43,3 +47,23 @@ void insertarPila(Nodo *&pila,int v)
 
 
 }
+
+void mostrarPila(Nodo *&pila)
+{       Nodo *aux;
+
+    if(pila==NULL)
+    {
+        cout<<"Una disculpa, los datos no pueden ser mostrados:pila vacia"<<endl;
+
+    }
+    else
+    {   aux=pila;
+        while(aux!=NULL)
+        {
+            cout<<"Valor"<<aux->valor<<endl;
+            aux=aux->siguiente;
+        }
+    }
+
+}
+
