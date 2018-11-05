@@ -26,7 +26,8 @@ int main()
     while(i<cantidad){
         cout<<"Dame el valor["<<i<<"]:";
         cin>>v;
-
+        insertarPila(pila,v);
+        i++;
     }
 
 
