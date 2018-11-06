@@ -54,10 +54,10 @@ int main()
         }
         else
         {   cout<<"se eliminara dato";
-/*
+
             while(pila!=NULL)
             {
-                eliminarPila(pila,v);
+               eliminarPila(pila,v);
                 if(pila!=NULL)
                 {
                     cout<<v<<"|"<<endl;
@@ -66,7 +66,7 @@ int main()
                 {
                     cout<<"*"<<endl;
                 }
-            }*/
+            }
         }
 
 
@@ -120,7 +120,7 @@ void mostrarPila(Nodo *&pila)
 
 }
 
-void eliminarPila(Nodo *pila,int &v)
+void eliminarPila(Nodo *&pila,int &v)
 {
     Nodo *aux=pila;
     v=aux->valor;
