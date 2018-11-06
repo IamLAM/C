@@ -19,21 +19,44 @@ int main()
     //El primero en entrar es el ultimo en salir
     //El ultimo que entra es el primero que sale
     int cantidad,i=0,v;
-
     Nodo *pila=NULL;
-    cout << "Trabajando con pilas" << endl;
-    cout<<"Proporciona la cantidad de numeros a introducir en la pila"<<endl;
-    cin>>cantidad;
 
-    while(i<cantidad)
+    cout<<"Selecciona la opción que deseas realizar:"<<endl;
+    cout<<"(1)Insertar valor a pila"<<endl;
+    cout<<"(2)Mostrar valor a pila"<<endl;
+    cout<<"(3)Eliminar valor a pila"<<endl;
+    cin>>op;
+    switch(op)
     {
-        cout<<"Dame el valor["<<i<<"]:";
-        cin>>v;
-        insertarPila(pila,v);
-        i++;
+    case 1:
+        cout<<"Proporciona la cantidad de numeros a introducir en la pila"<<endl;
+        cin>>cantidad;
+
+        while(i<cantidad)
+        {
+            cout<<"Dame el valor["<<i<<"]:";
+            cin>>v;
+            insertarPila(pila,v);
+            i++;
+        }
+        break;
+    case 2:
+        mostrarPila(pila);
+        break;
+
+    case 3:
+        eliminarPila(pila);
+        break;
+
+
     }
 
-    mostrarPila(pila);
+
+
+
+
+
+
 
 
     return 0;
@@ -50,7 +73,8 @@ void insertarPila(Nodo *&pila,int v)
 }
 
 void mostrarPila(Nodo *&pila)
-{       Nodo *aux;
+{
+    Nodo *aux;
 
     if(pila==NULL)
     {
@@ -58,7 +82,8 @@ void mostrarPila(Nodo *&pila)
 
     }
     else
-    {   aux=pila;
+    {
+        aux=pila;
         while(aux!=NULL)
         {
             cout<<"Valor"<<aux->valor<<endl;
@@ -68,11 +93,12 @@ void mostrarPila(Nodo *&pila)
 
 }
 
-void eliminarPila(Nodo *pila,int &v){
-Nodo *aux=pila;
-v=aux->valor;
-pila=aux->siguiente;
-delete aux;
+void eliminarPila(Nodo *pila,int &v)
+{
+    Nodo *aux=pila;
+    v=aux->valor;
+    pila=aux->siguiente;
+    delete aux;
 
 
 }
