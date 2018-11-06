@@ -12,6 +12,7 @@ struct Nodo
 
 void insertarPila(Nodo *&,int);
 void mostrarPila(Nodo *&);
+void eliminarPila(Nodo *&,int &);
 
 int main()
 {
@@ -67,3 +68,11 @@ void mostrarPila(Nodo *&pila)
 
 }
 
+void eliminarPila(Nodo *pila,int &v){
+Nodo *aux=pila;
+v=aux->valor;
+pila=aux->siguiente;
+delete aux;
+
+
+}
