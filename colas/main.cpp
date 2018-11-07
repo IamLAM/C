@@ -20,10 +20,32 @@ int main()
     Nodo *frente=NULL;
     Nodo *fin=NULL;
     int v;
-    cout<<"Proporciona un valor"<<endl;
-    cin>>v;
+    int op=1;
+
+    while(op!=4)
+    {
+        cout<<"Que desea realizar?"<<endl;
+        cout<<"(1)Insertar elemento a cola"<<endl;
+        cout<<"(2)Mostrar cola"<<endl;
+        cout<<"(3)Borrar elemento de cola"<<endl;
+        cout<<"(4)Salir"<<endl;
+        cin>>op;
+
+        switch(op)
+        {
+
+        case 1:
+            cout<<"Proporciona un valor"<<endl;
+            cin>>v;
+            insertarCola(frente,fin,v);
+            break;
 
 
+
+        default:
+            cout<<"Selecciono un opción que no existe, intente de nuevo";
+        }
+    }
 
     return 0;
 }
