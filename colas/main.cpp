@@ -11,7 +11,8 @@ struct Nodo
     Nodo *siguiente;
 };
 
-void insertarCola(Nodo *&frente,Nodo *&final,int v);
+void insertarCola(Nodo *&,Nodo *&,int);
+void mostrarCola(Nodo *&,Nodo *&);
 bool colaVacia(Nodo *);
 
 int main()
@@ -39,6 +40,9 @@ int main()
             cin>>v;
             insertarCola(frente,fin,v);
             break;
+        case 2:
+            mostrarCola(frente,fin);
+            break;
 
 
 
@@ -55,7 +59,7 @@ void insertarCola(Nodo *&frente,Nodo *&fin,int v)
     Nodo *insCola=new Nodo();
     insCola->dato=v;
     insCola->siguiente=NULL;
-    if(colaVacia(frente)==NULL)
+    if(colaVacia(frente))
     {
         frente=insCola;
     }
@@ -75,4 +79,20 @@ bool colaVacia(Nodo *frente)
         return true;
     else
         return false;
+}
+
+
+void mostrarCola(Nodo *&frente,Nodo *&fin)
+{
+    if(fin==NULL)
+    {
+        cout<<"Lo sentimos pero tu cola esta vacia"<<endl;
+    }
+    else
+    {
+
+
+    }
+
+
 }
