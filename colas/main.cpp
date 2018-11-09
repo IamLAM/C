@@ -105,14 +105,21 @@ bool colaVacia(Nodo *frente)
 
 
 void mostrarCola(Nodo *&frente,Nodo *&fin)
-{
-    if(fin==NULL)
+{   Nodo *aux;
+
+    if(frente==NULL)
     {
         cout<<"Lo sentimos pero tu cola esta vacia"<<endl;
     }
     else
     {
+    aux=frente;
+     while(aux!=NULL){
 
+         cout<<aux->dato<<endl;
+         aux=aux->siguiente;
+
+     }
 
     }
 
