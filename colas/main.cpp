@@ -21,7 +21,7 @@ int main()
     cout << "Trabajando en colas" << endl;
     Nodo *frente=NULL;
     Nodo *fin=NULL;
-    int v;
+    int v,i=0,c;
     int op=1;
 
     while(op!=4)
@@ -37,10 +37,15 @@ int main()
         {
 
         case 1:
-
-            cout<<"Proporciona un valor"<<endl;
-            cin>>v;
-            insertarCola(frente,fin,v);
+            cout<<"Cuantos valores deseas insertar"<<endl;
+            cin>>c;
+            while(i<c)
+            {
+                cout<<"Proporciona un valor"<<endl;
+                cin>>v;
+                insertarCola(frente,fin,v);
+                i++;
+            }
             break;
         case 2:
             mostrarCola(frente,fin);
@@ -58,7 +63,7 @@ int main()
                 }
                 else
                 {
-                    cout<<v<<"."endl;
+                    cout<<v<<"."<<endl;
                 }
             }
 
