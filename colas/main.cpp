@@ -37,6 +37,7 @@ int main()
         {
 
         case 1:
+
             cout<<"Proporciona un valor"<<endl;
             cin>>v;
             insertarCola(frente,fin,v);
@@ -46,8 +47,20 @@ int main()
             break;
 
         case 3:
-            eliminarCola(frente,fin,v);
+            while(frente!=NULL)
+            {
+                eliminarCola(frente,fin,v);
+                if(frente!=NULL)
+                {
+                    cout<<v<<"|"<<endl;
 
+
+                }
+                else
+                {
+                    cout<<v<<"."endl;
+                }
+            }
 
 
         default:
