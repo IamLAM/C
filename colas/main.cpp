@@ -14,6 +14,7 @@ struct Nodo
 void insertarCola(Nodo *&,Nodo *&,int);
 void mostrarCola(Nodo *&,Nodo *&);
 bool colaVacia(Nodo *);
+void eliminarCola(Nodo *&, Nodo *&, int &);
 
 int main()
 {
@@ -43,6 +44,9 @@ int main()
         case 2:
             mostrarCola(frente,fin);
             break;
+
+        case 3:
+            eliminarCola(frente,fin,v);
 
 
 
@@ -94,5 +98,24 @@ void mostrarCola(Nodo *&frente,Nodo *&fin)
 
     }
 
+
+}
+
+void eliminarCola(Nodo *&frente,Nodo *&fin,int &v)
+{
+    v=frente->dato;
+    Nodo *aux=frente;
+    if(frente==fin)
+    {
+        frente=NULL;
+        fin=NULL;
+
+    }
+    else
+    {
+        frente=frente->siguiente;
+
+    }
+    delete aux;
 
 }
