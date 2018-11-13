@@ -2,9 +2,10 @@
 
 using namespace std;
 
-struct Nodo{
-int valor;
-Nodo *siguiente;
+struct Nodo
+{
+    int valor;
+    Nodo *siguiente;
 
 };
 
@@ -19,12 +20,32 @@ int main()
     return 0;
 }
 
-void insertarLista(Nodo *&lista,int v){
-Nodo *insLista=new Nodo();
-insLista->valor=v;//asignamos el valor al nodo de la lista
+void insertarLista(Nodo *&lista,int v)
+{
+    Nodo *insLista=new Nodo();
+    insLista->valor=v;//asignamos el valor al nodo de la lista
 
-Nodo *aux=lista;
-Nodo *aux2;
+    Nodo *aux=lista;
+    Nodo *aux2;
+
+    //se meten ordenados los datos
+    while((aux!=NULL)&&(aux->valor<v))
+    {
+        aux2=aux1;
+        aux=aux->siguiente;
+    }
+
+
+    if(insLista==aux)
+    {
+        lista=insLista;
+    }
+    else
+    {
+        aux2->siguiente=insLista;
+    }
+
+    insLista->siguiente=aux;
 
 
 }
