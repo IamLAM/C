@@ -14,9 +14,40 @@ void insertarLista(Nodo *&,int);
 int main()
 {
     Nodo *lista=NULL;
-
+    int op=1,c,i=0,v;
 
     cout << "Trabajando con listas(simples, doblemente enlazadas, simples circulares, circulares doblemente enlzadas)" << endl;
+    while(op!=4)
+    {
+        cout<<"(1)Insertar valores"<<endl;
+        cout<<"(4)salir"<<endl;
+        cin>>op;
+
+        switch(op)
+        {
+
+        case 1:
+            cout<<"Indica el numero de valores a introducir"<<endl;
+            cin>>c;
+            while(i<c)
+            {
+                cout<<"Valor["<<i<<"]:"<<;
+                cin>>v;
+
+            }
+
+            break;
+
+        default:
+            cout<<"La opción seleccionada no corresponde"<<endl;
+        }
+
+
+    }
+
+
+
+
     return 0;
 }
 
