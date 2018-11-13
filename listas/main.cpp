@@ -31,9 +31,10 @@ int main()
             cin>>c;
             while(i<c)
             {
-                cout<<"Valor["<<i<<"]:"<<;
+                cout<<"Valor["<<i<<"]:";
                 cin>>v;
-
+                insertarLista(lista,v);
+                i++;
             }
 
             break;
@@ -62,7 +63,7 @@ void insertarLista(Nodo *&lista,int v)
     //se meten ordenados los datos
     while((aux!=NULL)&&(aux->valor<v))
     {
-        aux2=aux1;
+        aux2=aux;
         aux=aux->siguiente;
     }
 
@@ -78,5 +79,5 @@ void insertarLista(Nodo *&lista,int v)
 
     insLista->siguiente=aux;
 
-
+ cout<<"Elemento "<<v<<"insertado"<<endl;
 }
