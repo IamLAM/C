@@ -84,7 +84,7 @@ void insertarLista(Nodo *&lista,int v)
 
 void mostrarLista(Nodo *lista){
 
-Nodo *rec=New Nodo();
+Nodo *rec=new Nodo();
 rec=lista;
 
 while(rec!=NULL)
