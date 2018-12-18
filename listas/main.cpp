@@ -81,3 +81,13 @@ void insertarLista(Nodo *&lista,int v)
 
  cout<<"Elemento "<<v<<"insertado"<<endl;
 }
+
+void mostrarLista(Nodo *lista){
+
+Nodo *rec=New Nodo();
+rec=lista;
+
+while(rec!=NULL)
+cout<<rec->valor<<endl;
+rec=rec->siguiente;
+}
