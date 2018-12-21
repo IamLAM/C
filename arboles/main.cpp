@@ -13,7 +13,25 @@ struct Nodo
 
 int main()
 {
+    int op;
     cout << "Trabajando con arboles binarios" << endl;
+    cout << "Que deseas realizar?" << endl;
+    cout << "1.-Insertar nodo" << endl;
+    cout << "2.-Busqueda" << endl;
+    cout << "3.-Salir" << endl;
+    cin>>op;
+    switch(op)
+    {
+
+    case 1:
+
+        break;
+    case 2:
+        break;
+
+
+    }
+
     return 0;
 }
 
