@@ -11,9 +11,12 @@ struct Nodo
 
 };
 
+void insertar(Nodo *&,int);
+Nodo *crearNodo(int );
+
 int main()
 {
-    int op;
+    int op,valor;
     cout << "Trabajando con arboles binarios" << endl;
     cout << "Que deseas realizar?" << endl;
     cout << "1.-Insertar nodo" << endl;
@@ -24,7 +27,9 @@ int main()
     {
 
     case 1:
-
+        cout<<"Cual es el numero a introducir:"<<endl;
+            cin>>valor;
+            insertar(arbol,valor);
         break;
     case 2:
         break;
