@@ -11,6 +11,8 @@ struct Nodo
 
 };
 
+Nodo *arbol=NULL;
+
 void insertar(Nodo *&,int);
 Nodo *crearNodo(int );
 
@@ -18,6 +20,7 @@ int main()
 {
     int op,valor;
     cout << "Trabajando con arboles binarios" << endl;
+    while(op!=3){
     cout << "Que deseas realizar?" << endl;
     cout << "1.-Insertar nodo" << endl;
     cout << "2.-Busqueda" << endl;
@@ -35,6 +38,7 @@ int main()
         break;
 
 
+    }
     }
 
     return 0;
