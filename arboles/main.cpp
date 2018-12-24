@@ -15,7 +15,7 @@ Nodo *arbol=NULL;
 
 void insertar(Nodo *&,int);
 Nodo *crearNodo(int );
-void mostrar(Nodo *&,int );
+void mostrar(Nodo *,int );
 
 
 int main()
@@ -89,4 +89,26 @@ void insertar(Nodo *&arbol,int v)
 }
 
 
-void mostrar(Nodo *&arbol,int c){}
+void mostrar(Nodo *arbol,int c)
+{
+
+    if(arbol==NULL)
+    {
+        return;
+    }
+    else
+    {
+        mostrar(arbol->derecha,c+1);
+        for(int i=0; i<c; i++)
+        {
+
+            cout<<"  ";
+
+
+        }
+        cout<arbol->valor<<endl;
+        mostrar(arbol->izquierda,c+1);
+
+    }
+
+}
