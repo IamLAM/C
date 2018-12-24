@@ -107,7 +107,7 @@ void mostrar(Nodo *arbol,int c)
 
 
         }
-        cout<arbol->valor<<endl;
+        cout<<arbol->valor<<endl;
         mostrar(arbol->izquierda,c+1);
 
     }
