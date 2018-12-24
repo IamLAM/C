@@ -20,13 +20,13 @@ void mostrar(Nodo *,int );
 
 int main()
 {
-    int op,valor;
+    int op,valor,c=0;
     cout << "Trabajando con arboles binarios" << endl;
     while(op!=3)
     {
         cout << "Que deseas realizar?" << endl;
         cout << "1.-Insertar nodo" << endl;
-        cout << "2.-Busqueda" << endl;
+        cout << "2.-Mostrar" << endl;
         cout << "3.-Salir" << endl;
         cin>>op;
         switch(op)
@@ -38,6 +38,7 @@ int main()
             insertar(arbol,valor);
             break;
         case 2:
+            mostrar(arbol,c);
             break;
 
 
