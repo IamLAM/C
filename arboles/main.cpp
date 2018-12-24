@@ -15,30 +15,33 @@ Nodo *arbol=NULL;
 
 void insertar(Nodo *&,int);
 Nodo *crearNodo(int );
+void mostrar(Nodo *&,int );
+
 
 int main()
 {
     int op,valor;
     cout << "Trabajando con arboles binarios" << endl;
-    while(op!=3){
-    cout << "Que deseas realizar?" << endl;
-    cout << "1.-Insertar nodo" << endl;
-    cout << "2.-Busqueda" << endl;
-    cout << "3.-Salir" << endl;
-    cin>>op;
-    switch(op)
+    while(op!=3)
     {
+        cout << "Que deseas realizar?" << endl;
+        cout << "1.-Insertar nodo" << endl;
+        cout << "2.-Busqueda" << endl;
+        cout << "3.-Salir" << endl;
+        cin>>op;
+        switch(op)
+        {
 
-    case 1:
-        cout<<"Cual es el numero a introducir:"<<endl;
+        case 1:
+            cout<<"Cual es el numero a introducir:"<<endl;
             cin>>valor;
             insertar(arbol,valor);
-        break;
-    case 2:
-        break;
+            break;
+        case 2:
+            break;
 
 
-    }
+        }
     }
 
     return 0;
@@ -84,3 +87,6 @@ void insertar(Nodo *&arbol,int v)
 
 
 }
+
+
+void mostrar(Nodo *&arbol,int c){}
