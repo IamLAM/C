@@ -15,5 +15,13 @@ _Este es un curso de programación en C++, contiene una serie de ejercicios desd
 ### Temario
 
 1. Declaración y asignación de variables
+2. Operaciones
+3. Estructuras repetitivas  
+4. Arreglos
+5. Punteros
+6. Colas
+7. Pilas
+8. Listas
+9. Arboles
 
     
